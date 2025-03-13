@@ -1,7 +1,7 @@
 // ------------------------------------
 // Variable & Object Definitions
 // ------------------------------------
-const version = "0.6";
+const version = "0.6-1";
 const versionBranch = (location.pathname == "/beta/beta" || location.pathname == "/beta/beta.html") ? 1 : 0; // 0 is main, 1 is beta
 const inDevelopment = (location.hostname === "localhost" || location.hostname === "127.0.0.1") ? 1 : 0; // automatically toggles if hosted on the local machine
 const desktop = false;
@@ -347,6 +347,14 @@ const versionChangelogs = [
             "Accessing the beta version by going to clickercookie.github.io/beta would result in a 404."
         ],
         release: "September 22nd, 2024"
+    },
+    {
+        version: "0.6-1",
+        name: "warcrimes",
+        added: undefined,
+        changed: undefined,
+        fixed: [ "Fixed geneva conventions violation (#52)" ],
+        release: "March 13th, 2025"
     }
 ];
 
